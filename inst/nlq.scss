@@ -1,6 +1,6 @@
 @mixin nlq-item-selected {
   text-decoration: underline;
-  text-underline-offset: $spacer * 0.4;
+  text-underline-offset: $spacer * 0.3;
   text-decoration-thickness: 1.2px;
   text-decoration-style: dashed;
   text-decoration-color: $primary;
@@ -8,7 +8,7 @@
 }
 
 .human-readable-filters {
-  color: $gray-700;
+  color: $secondary;
   font-weight: $font-weight-bold;
   margin-bottom: $spacer;
 }
@@ -24,7 +24,7 @@
     }
 
     .dropdown-item {
-      color: $gray-700;
+      color: $secondary;
       font-weight: $font-weight-bold;
       &:hover {
         background-color: transparentize($link-color, 0.8);
