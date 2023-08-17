@@ -1,0 +1,34 @@
+@mixin nlq-item-selected {
+  text-decoration: underline;
+  text-underline-offset: $spacer * 0.4;
+  text-decoration-thickness: 1.2px;
+  text-decoration-style: dashed;
+  text-decoration-color: $primary;
+  color: $primary !important;
+}
+
+.human-readable-filters {
+  color: $gray-700;
+  font-weight: $font-weight-bold;
+  margin-bottom: $spacer;
+}
+
+.nlq-dropdown {
+  .nlq-dropdown-button {
+    @include nlq-item-selected;
+  }
+
+  .dropdown-menu {
+    .item_selected {
+      @include nlq-item-selected;
+    }
+
+    .dropdown-item {
+      color: $gray-700;
+      font-weight: $font-weight-bold;
+      &:hover {
+        background-color: transparentize($link-color, 0.8);
+      }
+    }
+  }
+}

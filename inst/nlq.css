@@ -1,0 +1,35 @@
+.human-readable-filters {
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: $spacer;
+}
+
+.nlq-dropdown {
+  .nlq-dropdown-button {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 1.2px;
+    text-decoration-style: dashed;
+    text-decoration-color: #5DB5B0;
+    color: #5DB5B0 !important;
+  }
+
+  .dropdown-menu {
+    .item_selected {
+      text-decoration: underline;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 1.2px;
+      text-decoration-style: dashed;
+      text-decoration-color: #5DB5B0;
+      color: #5DB5B0 !important;
+    }
+
+    .dropdown-item {
+      color: #333333;
+      font-weight: 700;
+      &:hover {
+        background-color: rgba(76, 175, 80, 0.8);
+      }
+    }
+  }
+}
