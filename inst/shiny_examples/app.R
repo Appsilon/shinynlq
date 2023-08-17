@@ -14,7 +14,9 @@ ui <- bslib::page(
 # Define server logic required to draw a histogram
 server <- function(input, output) {
   bslib::bs_themer()
-  output$text <- renderText({ paste(input$nlq_1, "picked", input$nlq_2) })
+  output$text <- renderText({
+    paste(input$nlq_1, "picked", input$nlq_2)
+  })
 }
 
 # Run the application

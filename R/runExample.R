@@ -17,7 +17,7 @@ runExample <- function() {
   appDir <- system.file("shiny_examples", package = "shinynlq")
 
   if (appDir == "") {
-    stop("Could not find example directory. Try re-installing `shinynlq`.", call. = FALSE)
+    stop("Could not find example directory for `shinynlq`.", call. = FALSE)
   }
 
   runApp(appDir, display.mode = "normal")
